@@ -6,4 +6,4 @@ services:
 before_action: build -t jparrish62/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI-true jparrsh62/docker-react npm run test 
+  - docker run -e CI-true jparrish62/docker-react npm run test 
