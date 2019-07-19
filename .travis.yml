@@ -1,4 +1,3 @@
-language: node_js
 sudo: required 
 services:
   - docker:
@@ -6,4 +5,4 @@ services:
 before_action: build -t jparrish62/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI-true jparrsh/docker-react npm run test 
+  - docker run -e CI-true jparrsh62/docker-react npm run test 
