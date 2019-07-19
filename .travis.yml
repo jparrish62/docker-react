@@ -1,0 +1,8 @@
+sudo: required 
+services:
+  - docker:
+
+before_action: build -t jparrish62/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI-true jparrsh/docker-react npm run test 
